@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Filtrar Productos por Categoría y Rango de Precios</title>
+</head>
+<body>
+    <div class="container1">
+        <h1>Filtrar Productos por Categoría</h1>
+        <form id="formulario">
+            <label for="categoria">Ingresa la categoría: </label>
+            <input type="text" id="categoria" name="categoria" required>
+            <button type="submit">Filtrar</button>
+        </form>
+        <h2>Resultados por Categoría</h2>
+        <ul id="lista-productos"></ul>
+        </div>
+        <div class="container2">
+        <h1>Filtrar Productos por Precios</h1>
+        <form id="formulario-precio">
+            <label for="precio-min">Precio Mínimo: </label>
+            <input type="number" id="precio-min" name="precio-min" required>
+            <label for="precio-max">Precio Máximo: </label>
+            <input type="number" id="precio-max" name="precio-max" required>
+            <button type="submit">Filtrar</button>
+        </form>
+        
+        <h2>Resultados por Precios</h2>
+        <ul id="lista-precios"></ul>
+    </div>
+    <script src="script_filterPF.js"></script>
+</body>
+</html>
